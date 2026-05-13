@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="GreenNest Plants Shop — Browse beginner-friendly plants sorted by climate type.">
+  <title>GreenNest Plants | Shop</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<header role="banner">
+  <a href="index.html" class="logo-link" aria-label="GreenNest Plants home">
+    <img src="images/logo.png" class="site-logo" alt="GreenNest Plants logo">
+    <h1 class="site-title">GreenNest</h1>
+  </a>
+
+  <nav aria-label="Primary navigation">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html" aria-current="page">Shop</a></li>
+      <li><a href="care.html">Care</a></li>
+      <li><a href="cart.html">Cart</a></li>
+      <li><a href="login.html">Login</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main-content" role="main">
+
+<section class="section-box" aria-labelledby="shop-heading">
+  <h2 id="shop-heading">Plant Shop</h2>
+
+  <div class="filter-bar" role="group" aria-label="Filter plants by climate">
+    <button class="filter-btn active" data-filter="all">All Plants</button>
+    <button class="filter-btn" data-filter="hot">Hot &amp; Dry</button>
+    <button class="filter-btn" data-filter="humid">Humid</button>
+    <button class="filter-btn" data-filter="shade">Indoor Shade</button>
+  </div>
+
+  <div class="cards small-images" role="list">
+
+    <article class="card product-card" data-climate="hot" role="listitem">
+      <div class="plant-img-wrap"><img src="images/cactus.webp" alt="Cactus" loading="lazy"></div>
+      <div class="card-body">
+        <h3>Cactus</h3>
+        <p class="price">$10</p>
+        <a class="button small" href="care.html#cactus">View Details</a>
+        <a class="button" onclick="addToCart('Cactus', 10)">Add to Cart</a>
+      </div>
+    </article>
+
+    <article class="card product-card" data-climate="hot" role="listitem">
+      <div class="plant-img-wrap"><img src="images/aloe_vera.webp" alt="Aloe Vera" loading="lazy"></div>
+      <div class="card-body">
+        <h3>Aloe Vera</h3>
+        <p class="price">$12</p>
+        <a class="button small" href="care.html#aloe_vera">View Details</a>
+        <a class="button" onclick="addToCart('Aloe Vera', 12)">Add to Cart</a>
+      </div>
+    </article>
+
+    <article class="card product-card" data-climate="humid" role="listitem">
+      <div class="plant-img-wrap"><img src="images/peace_lily.webp" alt="Peace Lily" loading="lazy"></div>
+      <div class="card-body">
+        <h3>Peace Lily</h3>
+        <p class="price">$18</p>
+        <a class="button small" href="care.html#peace_lily">View Details</a>
+        <a class="button" onclick="addToCart('Peace Lily', 18)">Add to Cart</a>
+      </div>
+    </article>
+
+    <article class="card product-card" data-climate="humid" role="listitem">
+      <div class="plant-img-wrap"><img src="images/fern.jpeg" alt="Fern" loading="lazy"></div>
+      <div class="card-body">
+        <h3>Fern</h3>
+        <p class="price">$16</p>
+        <a class="button small" href="care.html#fern">View Details</a>
+        <a class="button" onclick="addToCart('Fern', 16)">Add to Cart</a>
+      </div>
+    </article>
+
+    <article class="card product-card" data-climate="shade" role="listitem">
+      <div class="plant-img-wrap"><img src="images/snake_plant.webp" alt="Snake Plant" loading="lazy"></div>
+      <div class="card-body">
+        <h3>Snake Plant</h3>
+        <p class="price">$15</p>
+        <a class="button small" href="care.html#snake_plant">View Details</a>
+        <a class="button" onclick="addToCart('Snake Plant', 15)">Add to Cart</a>
+      </div>
+    </article>
+
+    <article class="card product-card" data-climate="shade" role="listitem">
+      <div class="plant-img-wrap"><img src="images/pothos.jpeg" alt="Pothos" loading="lazy"></div>
+      <div class="card-body">
+        <h3>Pothos</h3>
+        <p class="price">$14</p>
+        <a class="button small" href="care.html#pothos">View Details</a>
+        <a class="button" onclick="addToCart('Pothos', 14)">Add to Cart</a>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+</main>
+
+<footer role="contentinfo">
+  <div class="footer-bottom">
+    <p>&copy; 2026 GreenNest Plants. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
